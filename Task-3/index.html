@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Product Pricing Cards</title>
+  <meta name="description" content="SaaS pricing cards with a Monthly/Yearly billing toggle, hover effects and badge ribbons." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page">
+    <header class="intro">
+      <h1>Pricing that grows with your team</h1>
+      <p>Start small, upgrade when you need to. Switch billing any time.</p>
+
+      <div class="billing" role="group" aria-label="Billing cycle">
+        <span class="billing__label is-active" id="label-monthly">Monthly</span>
+        <button class="switch" id="billing-toggle" type="button" role="switch"
+                aria-checked="false" aria-labelledby="label-monthly label-yearly">
+          <span class="switch__thumb"></span>
+        </button>
+        <span class="billing__label" id="label-yearly">Yearly</span>
+        <span class="billing__save">Save 20%</span>
+      </div>
+    </header>
+
+    <section class="grid" aria-label="Pricing plans">
+
+      <!-- Starter -->
+      <article class="card" data-monthly="10" data-yearly="8" data-total="96">
+        <h2 class="card__name">Starter</h2>
+        <p class="card__desc">For individuals trying things out.</p>
+        <p class="price">
+          <span class="price__currency">$</span><span class="price__amount" data-price>10</span>
+          <span class="price__period" data-period>/ month</span>
+        </p>
+        <p class="price__note" data-note>Billed monthly</p>
+        <ul class="features">
+          <li>1 project</li>
+          <li>2 GB storage</li>
+          <li>Community support</li>
+          <li>Basic analytics</li>
+        </ul>
+        <a href="#" class="btn btn--outline">Start free trial</a>
+      </article>
+
+      <!-- Pro (Popular) -->
+      <article class="card card--featured" data-monthly="30" data-yearly="24" data-total="288">
+        <span class="ribbon ribbon--popular" aria-label="Most popular plan">Popular</span>
+        <h2 class="card__name">Pro</h2>
+        <p class="card__desc">For growing teams shipping every week.</p>
+        <p class="price">
+          <span class="price__currency">$</span><span class="price__amount" data-price>30</span>
+          <span class="price__period" data-period>/ month</span>
+        </p>
+        <p class="price__note" data-note>Billed monthly</p>
+        <ul class="features">
+          <li>Unlimited projects</li>
+          <li>50 GB storage</li>
+          <li>Priority email support</li>
+          <li>Advanced analytics</li>
+          <li>Team roles &amp; permissions</li>
+        </ul>
+        <a href="#" class="btn btn--solid">Get Pro</a>
+      </article>
+
+      <!-- Business (Best Value) -->
+      <article class="card" data-monthly="60" data-yearly="48" data-total="576">
+        <span class="ribbon ribbon--value" aria-label="Best value plan">Best Value</span>
+        <h2 class="card__name">Business</h2>
+        <p class="card__desc">For companies that need control and scale.</p>
+        <p class="price">
+          <span class="price__currency">$</span><span class="price__amount" data-price>60</span>
+          <span class="price__period" data-period>/ month</span>
+        </p>
+        <p class="price__note" data-note>Billed monthly</p>
+        <ul class="features">
+          <li>Everything in Pro</li>
+          <li>500 GB storage</li>
+          <li>24/7 phone support</li>
+          <li>Single sign-on (SSO)</li>
+          <li>Audit logs &amp; custom roles</li>
+        </ul>
+        <a href="#" class="btn btn--outline">Contact sales</a>
+      </article>
+
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
