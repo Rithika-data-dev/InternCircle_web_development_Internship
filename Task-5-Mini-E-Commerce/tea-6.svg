@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d3ebb8"/><stop offset="1" stop-color="#ffffff" stop-opacity=".55"/></linearGradient>
+<linearGradient id="p" x1="0" x2="1"><stop offset="0" stop-color="#3f6b21"/><stop offset=".5" stop-color="#3f6b21" stop-opacity=".88"/><stop offset="1" stop-color="#000" stop-opacity=".35"/></linearGradient></defs>
+<rect width="400" height="400" fill="url(#g)"/>
+<rect y="318" width="400" height="82" fill="#000" opacity=".05"/>
+<ellipse cx="200" cy="334" rx="112" ry="14" fill="#000" opacity=".18"/>
+<path d="M110 70 h180 l14 30 v212 q0 14 -14 14 h-180 q-14 0 -14 -14 v-212z" fill="url(#p)"/>
+<rect x="96" y="70" width="208" height="26" rx="4" fill="#000" opacity=".18"/>
+<g stroke="#fff" stroke-opacity=".25" stroke-width="2"><line x1="108" y1="74" x2="108" y2="92"/><line x1="118" y1="74" x2="118" y2="92"/><line x1="128" y1="74" x2="128" y2="92"/><line x1="138" y1="74" x2="138" y2="92"/><line x1="148" y1="74" x2="148" y2="92"/><line x1="158" y1="74" x2="158" y2="92"/><line x1="168" y1="74" x2="168" y2="92"/><line x1="178" y1="74" x2="178" y2="92"/><line x1="188" y1="74" x2="188" y2="92"/><line x1="198" y1="74" x2="198" y2="92"/><line x1="208" y1="74" x2="208" y2="92"/><line x1="218" y1="74" x2="218" y2="92"/><line x1="228" y1="74" x2="228" y2="92"/><line x1="238" y1="74" x2="238" y2="92"/><line x1="248" y1="74" x2="248" y2="92"/><line x1="258" y1="74" x2="258" y2="92"/><line x1="268" y1="74" x2="268" y2="92"/><line x1="278" y1="74" x2="278" y2="92"/><line x1="288" y1="74" x2="288" y2="92"/></g>
+<rect x="124" y="130" width="152" height="170" rx="10" fill="#fffdf8"/>
+<ellipse cx="200" cy="176" rx="10" ry="28" fill="#3f6b21" opacity=".9" transform="rotate(-50 200 200) translate(0,-24)"/><ellipse cx="200" cy="176" rx="10" ry="28" fill="#3f6b21" opacity=".9" transform="rotate(-20 200 200) translate(0,-24)"/><ellipse cx="200" cy="176" rx="10" ry="28" fill="#3f6b21" opacity=".9" transform="rotate(10 200 200) translate(0,-24)"/><ellipse cx="200" cy="176" rx="10" ry="28" fill="#3f6b21" opacity=".9" transform="rotate(40 200 200) translate(0,-24)"/>
+<circle cx="200" cy="176" r="3" fill="#f2d27a"/>
+<text x="200" y="232" text-anchor="middle" font-family="Georgia,serif" font-size="22" font-weight="700" fill="#3f6b21">Tulsi</text>
+<text x="200" y="256" text-anchor="middle" font-family="Georgia,serif" font-size="18" fill="#3f6b21">Ginger</text>
+<rect x="160" y="270" width="80" height="2" fill="#f2d27a"/>
+<text x="200" y="289" text-anchor="middle" font-family="Arial,sans-serif" font-size="10" letter-spacing="2" fill="#555">HERBAL TEA · 100 G</text>
+<text x="200" y="118" text-anchor="middle" font-family="Arial,sans-serif" font-size="12" letter-spacing="3" fill="#fff" opacity=".9">CHAI ATLAS</text>
+</svg>
