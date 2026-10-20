@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chai Atlas – Small-batch teas</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="top">
+  <a class="brand" href="#">Chai Atlas</a>
+  <button class="cart-btn" id="open-cart" aria-label="Open cart">
+    Cart <span class="count" id="cart-count">0</span>
+  </button>
+</header>
+
+<main>
+  <section class="hero">
+    <h1>Teas from six hills, packed the week they’re picked.</h1>
+    <p>Browse the shelf, fill your cart, and preview your order before you check out.</p>
+  </section>
+
+  <div class="filters" id="filters" role="group" aria-label="Filter by type"></div>
+  <section class="grid" id="products" aria-live="polite"></section>
+</main>
+
+<aside class="drawer" id="drawer" aria-hidden="true" aria-label="Your cart">
+  <div class="drawer-head">
+    <h2>Your cart</h2>
+    <button class="icon-btn" id="close-cart" aria-label="Close cart">✕</button>
+  </div>
+  <ul class="cart-list" id="cart-list"></ul>
+  <div class="drawer-foot">
+    <div class="row total"><span>Total</span><strong id="cart-total">₹0</strong></div>
+    <button class="primary" id="checkout-btn">Preview checkout</button>
+    <button class="link" id="clear-cart">Empty cart</button>
+  </div>
+</aside>
+<div class="scrim" id="scrim" hidden></div>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" hidden>
+  <div class="modal-box">
+    <h2 id="modal-title">Order preview</h2>
+    <div id="modal-body"></div>
+    <div class="modal-actions">
+      <button class="secondary" id="modal-back">Keep shopping</button>
+      <button class="primary" id="modal-confirm">Place order</button>
+    </div>
+  </div>
+</div>
+
+<div class="toast" id="toast" role="status"></div>
+<script src="script.js"></script>
+</body>
+</html>
