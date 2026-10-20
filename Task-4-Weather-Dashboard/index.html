@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Skyline – Live Weather Dashboard</title>
+  <meta name="description" content="Live city temperature, weather conditions and a 5-day forecast." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,800&family=Figtree:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body data-sky="idle">
+  <div class="shell">
+    <header class="top">
+      <a class="brand" href="./" aria-label="Skyline home">Skyline</a>
+
+      <form id="search-form" class="search" novalidate role="search">
+        <label for="city-input" class="sr-only">City name</label>
+        <input
+          id="city-input"
+          name="city"
+          type="search"
+          placeholder="Search a city, e.g. Lisbon"
+          autocomplete="off"
+          spellcheck="false"
+          aria-describedby="field-error"
+        />
+        <button type="submit" class="btn btn-primary">Search</button>
+        <button type="button" id="locate-btn" class="btn btn-ghost" title="Use my current location">Use my location</button>
+      </form>
+
+      <div class="unit-toggle" role="group" aria-label="Temperature unit">
+        <button type="button" data-unit="c" aria-pressed="true">°C</button>
+        <button type="button" data-unit="f" aria-pressed="false">°F</button>
+      </div>
+    </header>
+
+    <p id="field-error" class="field-error" role="alert" hidden></p>
+    <div id="recent" class="recent" aria-label="Recent searches"></div>
+
+    <main id="view" class="view" aria-live="polite"></main>
+
+    <footer class="foot">
+      Weather data by <a href="https://open-meteo.com/" target="_blank" rel="noopener">Open-Meteo</a>. No API key needed.
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
